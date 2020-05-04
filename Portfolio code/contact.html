@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact me</title>
+    <meta name="author" content="Ole Daland" />
+    <meta name="description" content="Contact, portfolio" />
+    <meta name="keywords" content="Ole Daland, Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://images.squarespace-cdn.com/content/v1/5643a7f0e4b02d0ff72a1b64/1507650426255-FSZM52ON7KZQL0Z6M4GU/ke17ZwdGBToddI8pDm48kE0NO8YKh7bKUlqWf0lbEMBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzQADmeAxcAdcnXMbNdfUEU-mYhUfAZzSUfyQzDg0du23zpN0MsIyibf9rHzPzMiCk/favicon.ico?format=100w"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/master.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <div class="left">
+          <li>|</li>
+          <li><a class="li" href="/index.html">Home</a></li>
+          <li>|</li>
+          <li><a class="li" href="/about.html">About</a></li>
+          <li>|</li>
+        </div>
+        <div class="right">
+          <li>|</li>
+          <li><a class="li" href="/cv.html">CV</a></li>
+          <li>|</li>
+          <li><a class="active li" href="/contact.html">Contact</a></li>
+          <li>|</li>
+        </div>
+      </ul>
+    </nav>
+    <header>
+      <div>
+        <h1 class="contactHeader">Feel free to contact me!</h1>
+      </div>
+    </header>
+    <main>
+      <form id="contactForm">
+        <div class="form-group">
+          <input
+            name="name"
+            type="text"
+            id="name"
+            class="feedback-input"
+            placeholder="Name"
+          />
+          <div class="form-error" id="nameError">
+            <p>Please enter your first name</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <input
+            name="email"
+            id="email"
+            type="text"
+            class="feedback-input"
+            placeholder="Email"
+          />
+          <div class="form-error" id="emailError">
+            <p>Please enter your email address</p>
+          </div>
+          <div class="form-error" id="invalidEmailError">
+            <p>Please enter a valid email address</p>
+          </div>
+        </div>
+        <textarea
+          name="text"
+          class="feedback-input"
+          placeholder="Your question"
+        ></textarea>
+        <button type="submit" class="btn btn-primary" id="submit">
+          Submit
+        </button>
+      </form>
+    </main>
+    <script src="/js/master.js"></script>
+  </body>
+  <footer>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+  </footer>
+</html>
